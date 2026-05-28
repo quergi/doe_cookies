@@ -65,15 +65,39 @@ Ofenschwankungen, Blechposition
 | A+ B+ C+          | 8          |
 | AM BM CM          | Z          |
 
-| Teignummer | Block 1    | Block 2 | Block 3 |
-| -----------| -------    | ------- | ------- |
-| 1          | hinten (2) |  |  |
-| 2          | Mitte  (7) |  |  |
-| 3          | vorne  (10)|  |  |
-| 4          | hinten (3) |  |  |
-| 5          | vorne  (9) |  |  |
-| 6          | hinten (1) |  |  |
-| 7          | Mitte  (6) |  |  |
-| 8          | Mitte  (5) |  |  |
-| 9/Z        | vorne  (8) |  |  |
-| 10/Z       | Mitte  (4) |  |  |
+
+## Alle Positionen zufällig
+<!-- | Teignummer | Block 1    | Block 2    | Block 3    |
+| -----------| -------    | -------    | -------    |
+| 1          | hinten (2) | Mitte  (5) | Mitte  (6) |
+| 2          | Mitte  (7) | Mitte  (6) | hinten (3) |
+| 3          | vorne  (10)| vorne  (9) | Mitte  (7) |
+| 4          | hinten (3) | Mitte  (7) | hinten (2) |
+| 5          | vorne  (9) | hinten (2) | vorne  (10)|
+| 6          | hinten (1) | Mitte  (4) | Mitte  (5) |
+| 7          | Mitte  (6) | vorne  (8) | vorne  (9) |
+| 8          | Mitte  (5) | hinten (3) | vorne  (8) |
+| 9/Z        | vorne  (8) | hinten (1) | hinten (1) |
+| 10/Z       | Mitte  (4) | vorne  (10)| Mitte  (4) | -->
+
+## Block 1 zufällig - danach rotiert
+
+Rotation von hinten zur Mitte (+4)
+Rotation von der Mitte nach vorne (+3)
+Rotation von vorne nach hinten (-7)
+
+Also hinten - Mitte - vorne - hinten
+Außer Position 4 (2. Zentralpunkt bleibt auf Position 4)
+
+| Teignummer | Block 1    | Block 2    | Block 3    |
+| -----------| -------    | -------    | -------    |
+| 1          | hinten (2) | Mitte  (6) | vorne  (9) |
+| 2          | Mitte  (7) | vorne  (10)| hinten (3) |
+| 3          | vorne  (10)| hinten (3) | Mitte  (7) |
+| 4          | hinten (3) | Mitte  (7) | vorne  (10)|
+| 5          | vorne  (9) | hinten (2) | Mitte  (6) |
+| 6          | hinten (1) | Mitte  (5) | vorne  (8) |
+| 7          | Mitte  (6) | vorne  (9) | hinten (2) |
+| 8          | Mitte  (5) | vorne  (8) | hinten (1) |
+| 9/Z        | vorne  (8) | hinten (1) | Mitte  (5) |
+| 10/Z       | Mitte  (4) | Mitte  (4) | Mitte  (4) |
