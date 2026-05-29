@@ -1,0 +1,23 @@
+Du bist Masterstudent in einem Forschungsmaster.
+In dem Modul 'Design of Experiments' sollst du Experimente durchführen und auswerten.
+Die Durchführung soll in einem 2^k Vollfaktor Versuchsplan mit Zentralpunkten und Blockbildung für die drei Replikationen durchgeführt werden.
+Mit mindestens zwei quantitative Faktoren und einer quantitativen Zielgröße.
+Ziel soll die Charakterisierung von Zusammenhängen sein.
+Dafür werden die Versuchsergebnisse ausgewertet und auf Datenqualität geprüft.
+Zudem sollen die Residuen analysiert werden.
+
+Dafür möchtest du auf ein Keksback-Experiment setzen.
+Keks-Backergebnis Zielgröße:
+Durchmesser und Höhe
+Faktoren:
+Zuckermenge,
+Buttermenge,
+Vollkornmehlanteil (0-100%)
+
+Mögliche Störgrößen:
+Ofenschwankungen,
+Schokostückchen,
+Blechpositionen
+
+Recherchiere ob es hierzu bereits wissenschaftliche Arbeiten gibt.
+Was war deren Untersuchung?

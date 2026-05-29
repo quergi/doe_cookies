@@ -1,0 +1,16 @@
+*.aux
+*.ccf
+*.lof
+*.log
+*.lol
+*.lot
+thesis.pdf
+*.toc
+*.bbl
+*.blg
+/thesis.bcf
+/thesis.run.xml
+/content/0_abstract.aux
+/thesis.fdb_latexmk
+/thesis.fls
+/thesis.synctex.gz
