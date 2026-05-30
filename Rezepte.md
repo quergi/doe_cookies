@@ -28,7 +28,7 @@ Zentralpunkt gibt Zutatenmengen für alles außer Butter und Zucker an.
 Die 280g Mehl werden als Fixpunkt betrachtet.
 Eier werden auf 2 Stück, Natron auf 1TL, Backofentemperatur auf 175°C, Backdauer auf 11 Minuten und Schokoladenstückchen auf 200g festgelegt.
 
-Zeiten des Rührens:
+Zeiten des Mischens:
 
 | Zutaten                            | Dauer | Stufe |
 |------------------------------------|-------|-------|
