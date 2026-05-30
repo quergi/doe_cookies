@@ -19,5 +19,4 @@ Ofenschwankungen,
 Schokostückchen,
 Blechpositionen
 
-Recherchiere ob es hierzu bereits wissenschaftliche Arbeiten gibt.
-Was war deren Untersuchung?
+Welche Methoden gibt es für die Systematische Ermittlung aller potentiellen Zielgrößen?
