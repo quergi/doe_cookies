@@ -34,24 +34,24 @@ Die Abbildung \ref{fig:analyse_gesamt} zeigt die relevanten Diagramme der Analys
 Die Regressionsgleichung für das vollständige Modell mit kodierten Einheiten ist wie folgt:
 
 \begin{equation} \label{eq:modell_gesamt}
-\begin{aligned}
-\text{Durchsch\_Durchmesser} = 71,771 - 1,583 \cdot \text{Block\_1} + 0,117 \cdot \text{Block\_2}  \\
-    + 4,146 \cdot \text{Butter} + 6,771 \cdot \text{Zucker} - 4,646 \cdot \text{Vollkornmehl} \  \\
-    + 0,646 \cdot (\text{Butter}\cdot\text{Zucker}) - 0,521 \cdot (\text{Butter}\cdot\text{Vollkornmehl})  \\
-    - 0,646 \cdot (\text{Zucker}\cdot\text{Vollkornmehl}) + 0,312 \cdot (\text{Butter}\cdot\text{Zucker}\cdot\text{Vollkornmehl})  \\
-    - 1,438 \cdot \text{ZtrPkt}
-\end{aligned}
+\begin{split}
+\text{Durchsch\_Durchmesser} = & 71,771 - 1,583 \cdot \text{Block\_1} + 0,117 \cdot \text{Block\_2}  \\
+    & + 4,146 \cdot \text{Butter} + 6,771 \cdot \text{Zucker} - 4,646 \cdot \text{Vollkornmehl} \  \\
+    & + 0,646 \cdot (\text{Butter}\cdot\text{Zucker}) - 0,521 \cdot (\text{Butter}\cdot\text{Vollkornmehl})  \\
+    & - 0,646 \cdot (\text{Zucker}\cdot\text{Vollkornmehl}) \\
+    & + 0,312 \cdot (\text{Butter}\cdot\text{Zucker}\cdot\text{Vollkornmehl})  \\
+    & - 1,438 \cdot \text{ZtrPkt}
+\end{split}
 \end{equation}
 
 \begin{figure}
-    
+    \centering
 \begin{subfigure}{0.49\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/varianzanalyse_gesamt.png}
     \caption{Varianzanalyse des vollständigen Modells}
     \label{fig:anova_gesamt}
-\end{subfigure}
-
+\end{subfigure}\hfill
 \begin{subfigure}{0.49\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/wahrscheinlichkeitsnetz_gesamt.png}
@@ -59,20 +59,18 @@ Die Regressionsgleichung für das vollständige Modell mit kodierten Einheiten i
     \label{fig:wahrscheinlichkeitsnetz_gesamt}
 \end{subfigure}
 
-\end{figure}
-\begin{figure}
-    
+\medskip
+
 \begin{subfigure}{0.49\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/residuen_anpassung_gesamt.png}
     \caption{Residuen in Abhängigkeit der Prognosewerte}
     \label{fig:residuen_anpassung_gesamt}
-\end{subfigure}
-
+\end{subfigure}\hfill
 \begin{subfigure}{0.49\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/residuen_reihenfolge_gesamt.png}
-    \caption{Residuen in Abhängigkeit der Durchlaufnummern und damit Blechpositionen}
+    \caption{Residuen in Abhängigkeit der Durchläufe}
     \label{fig:residuen_reihenfolge_gesamt}
 \end{subfigure}
 
@@ -99,7 +97,7 @@ Deshalb wird als nächstes mit der Modellreduzierung fortgefahren.
 Zentralpunkt und die Blockbildung bleibt aufgrund der Signifikanz vorerst erhalten.
 Durch die Vereinfachung weichen die Prognosen für die Durchlaufnummern 1 und 18 stärker ab.
 Diese werden von MiniTab als \emph{ungewöhnliche Beobachtung} ausgewiesen und bewertet (siehe Abbildung \ref{fig:vereinfachung_1}).
-Diese Beobachtungen sind auf die Blechpositonen zurückzuführen.
+Diese Beobachtungen sind auf die Blechpositionen zurückzuführen.
 Der Fehler des Modells bleibt bei der \emph{Fehlenden Anpassung} allerdings nicht signifikant.
 Auch die Residuen weichen nicht stark vom vorherigen Modell ab.
 
@@ -113,7 +111,7 @@ Auch die Residuen weichen nicht stark vom vorherigen Modell ab.
 Als nächstes wird die 2FWW \emph{Butter*Vollkornmehl} entfernt.
 Diese weißt mit einem p-Wert von $0,078$ als nächste Wechselwirkungen keine Signifikanz auf.
 Durch die Vereinfachung weichen nur die Prognosen für die Durchlaufnummern 1 als \emph{ungewöhnliche Beobachtung} ausgewiesen.
-Die Residuenanalyse ergibt keine Hinweise auf Änderungen in der Normalverteilung, Streuung oder in der Ablaufstruktur.
+Die Residuen-Analyse ergibt keine Hinweise auf Änderungen in der Normalverteilung, Streuung oder in der Ablaufstruktur.
 Damit sind für $p < 0,05$ alle nicht Signifikaten Faktoren und Wechselwirkungen entfernt.
 Allerdings bleibt noch immer der Hinweis auf eine Krümmung mit dem p-Wert von $0,042$.
 
@@ -160,40 +158,38 @@ Die Residuen streuen relativ stark, sind aber zufällig um die Prognosewerte ver
 Der Trend der Blechpositionen ist noch erkennbar, nahm aber mit der Vereinfachung des Modells ab.
 
 \begin{figure}
-    
-\begin{subfigure}{0.49\textwidth}
+    \centering
+\begin{subfigure}{0.47\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/varianzanalyse_final.png}
     \caption{Varianzanalyse des finalen Modells}
     \label{fig:anova_final}
-\end{subfigure}
-
-\begin{subfigure}{0.49\textwidth}
+\end{subfigure}\hfill
+\begin{subfigure}{0.47\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/wahrscheinlichkeitsnetz_final.png}
     \caption{Wahrscheinlichkeitsnetz für die Normalverteilung}
     \label{fig:wahrscheinlichkeitsnetz_final}
 \end{subfigure}
 
-\end{figure}
-\begin{figure}
-    
-\begin{subfigure}{0.49\textwidth}
+\medskip
+
+\begin{subfigure}{0.47\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/residuen_anpassung_final.png}
     \caption{Residuen in Abhängigkeit der Prognosewerte}
     \label{fig:residuen_anpassung_final}
-\end{subfigure}
-
-\begin{subfigure}{0.49\textwidth}
+\end{subfigure}\hfill
+\begin{subfigure}{0.47\textwidth}
     \centering
     \includegraphics[width = \textwidth]{figures/residuen_reihenfolge_final.png}
-    \caption{Residuen in Abhängigkeit der Durchlaufnummern und damit Blechpositionen}
+    \caption{Residuen in Abhängigkeit der Durchläufe}
     \label{fig:residuen_reihenfolge_final}
 \end{subfigure}
 
 \caption{Analyse des finale Modells}
 \label{fig:analyse_final}
+\end{figure}
 
 % NICHT MÖGLICH
 % 4. Ermittlung der optimalen Einstellungen
@@ -206,30 +202,12 @@ Mit zunehmenden Vollkornmehlanteil sinkt der Durchmesser des Cookies hingegen.
 Dies lässt sich nur für den Faktorraum gesichert sagen.
 Die Abbildung \ref{fig:haupteffekte_diagramm} zeigt die Wirkungen der Haupteffekte im Faktorraum.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\linewidth]{figures/haupteffekte_diagramm.png}
-    \caption{Haupteffekte und deren Wirkung auf den Durchmesser}
-    \label{fig:haupteffekte_diagramm}
-\end{figure}
-
-Die Regressionsgleichung in kodierter Form für das finale Modell ist wie folgt:
-
-\begin{equation} \label{eq:modell_final}
-\begin{aligned}
-\text{Durchsch\_Durchmesser} = 71,483 - 1,583 \cdot \text{Block\_1} + 0,117 \cdot \text{Block\_2} \\
-                               + 4,146 \cdot \text{Butter} + 6,771 \cdot \text{Zucker} - 4,646 \cdot \text{Vollkornmehl}
-\end{aligned}
-\end{equation}
-
-
 % NICHT MÖGLICH
 % 5. Ergebnisprognose
 % Erstellen Sie auf Basis des endgültigen mathematischen Modells die Vorhersage für das optimale Ergebnis, indem Sie die
 % Regressionsgleichung aufstellen und das Ergebnis berechnen.
 % Achtung: Achten Sie beim mathematischen Modell auf die unterschiedlichen Koeffizienten für das codierte und das uncodierte
 % Modell. Im Kurs wird nur das kodierte Modell verwendet!
-
 
 % Die Ergebnisinterpretation erfolgt graphisch.
 % Bei signifikanten Wechselwirkungen verwenden wir den Wechselwirkungsplots
@@ -242,3 +220,19 @@ Die Regressionsgleichung in kodierter Form für das finale Modell ist wie folgt:
 % - Als weitere Möglichkeit können Sie den Cube Pot darstellen
 % - Zur Darstellung der Zielgröße im gesamten Versuchsraum sind Kontur-und
 % Antwortflächendiagramme sinnvoll
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/haupteffekte_diagramm.png}
+    \caption{Haupteffekte und deren Wirkung auf den Durchmesser}
+    \label{fig:haupteffekte_diagramm}
+\end{figure}
+
+Die Regressionsgleichung in kodierter Form für das finale Modell ist wie folgt:
+
+\begin{equation} \label{eq:modell_final}
+\begin{split}
+\text{Durchsch\_Durchmesser} = & 71,483 - 1,583 \cdot \text{Block\_1} + 0,117 \cdot \text{Block\_2} \\
+                               & + 4,146 \cdot \text{Butter} + 6,771 \cdot \text{Zucker} - 4,646 \cdot \text{Vollkornmehl}
+\end{split}
+\end{equation}
